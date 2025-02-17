@@ -105,14 +105,14 @@ First, export the configuration and deployment definitions from the UAT namespac
 oc get configmap my-service-config -n uat -o yaml > configmap.yaml
 oc get deployment my-service -n uat -o yaml > deployment.yaml
 ```
-3.2 Step 2: Modify Configurations for Production
+### 3.2 Step 2: Modify Configurations for Production
 Update the namespace field in the YAML files to reflect the production environment. This ensures that the resources are applied in the correct namespace.
 
 ```bash
 metadata:
   namespace: production
 ```
-3.3 Step 3: Apply ConfigMap and Deployment to Production
+### 3.3 Step 3: Apply ConfigMap and Deployment to Production
 Now, apply the updated files to the production namespace:
 
 ```bash
@@ -120,7 +120,7 @@ oc apply -f configmap.yaml -n production
 oc apply -f deployment.yaml -n production
 ```
 
-3.4 Step 4: Expose the Service and Verify
+### 3.4 Step 4: Expose the Service and Verify
 Expose the service to make it accessible externally and verify its functionality using cURL.
 
 ```bash
@@ -128,10 +128,10 @@ oc expose deployment my-service --type=LoadBalancer --name=my-service-lb -n prod
 curl http://my-service-lb.production.example.com
 ```
 
-4. Practical Example: Deploying NGINX-based Microservice
+## 4. Practical Example: Deploying NGINX-based Microservice
 Let’s deploy a simple NGINX application in OpenShift using ConfigMap, Deployment, and Service.
 
-4.1 Step 1: Create a ConfigMap
+### 4.1 Step 1: Create a ConfigMap
 First, create a ConfigMap that holds the HTML content for NGINX.
 
 ```bash
@@ -151,7 +151,7 @@ Apply the ConfigMap:
 oc apply -f configmap.yaml
 ```
 
-4.2 Step 2: Create a Deployment
+### 4.2 Step 2: Create a Deployment
 Create a Deployment that uses the NGINX image and mounts the ConfigMap to serve the HTML content.
 
 ```bash
@@ -187,14 +187,14 @@ oc apply -f deployment.yaml
 ```
 
 
-4.3 Step 3: Expose the Service
+### 4.3 Step 3: Expose the Service
 Expose the NGINX service to the network to make it accessible externally.
 
 ```bash
 oc expose deployment nginx-app --port=80 --type=LoadBalancer --name=nginx-service
 ```
 
-4.4 Step 4: Get the Service URL and Test
+### 4.4 Step 4: Get the Service URL and Test
 Retrieve the external IP or URL assigned to the service and test it using cURL:
 
 ```bash
@@ -202,7 +202,6 @@ oc get svc nginx-service
 curl http://192.168.1.100
 ```
 Expected Output:
-html
-Copy
+
 <html><body><h1>Hello, OpenShift!</h1></body></html>
-Run HTML
+
