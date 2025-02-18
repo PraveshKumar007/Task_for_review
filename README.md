@@ -129,7 +129,7 @@ curl http://my-service-lb.production.example.com
 ```
 
 ## 4. Practical Example: Deploying NGINX-based Microservice
-Let’s deploy a simple NGINX application in OpenShift using ConfigMap, Deployment, and Service.
+Let’s deploy a simple NGINX application in Minikube using ConfigMap, Deployment, and Service.
 
 ### 4.1 Step 1: Create a ConfigMap
 First, create a ConfigMap that holds the HTML content for NGINX.
@@ -139,7 +139,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: nginx-config
-  namespace: myproject
+  namespace: production
 data:
   index.html: |
     <html><body><h1>Hello, OpenShift!</h1></body></html>
@@ -148,7 +148,11 @@ data:
 Apply the ConfigMap:
 
 ```bash
-oc apply -f configmap.yaml
+kubectl apply -f configmap.yaml
+```
+Output:-
+```
+configmap/nginx-config created
 ```
 
 ### 4.2 Step 2: Create a Deployment
@@ -159,13 +163,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-app
-  namespace: myproject
+  namespace: uat
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-app  
   template:
     metadata:
       labels:
-        app: nginx-app
+        app: nginx-app  
     spec:
       containers:
       - name: nginx
@@ -177,13 +184,18 @@ spec:
       - name: nginx-html
         configMap:
           name: nginx-config
+
 ```
 
 
 Apply the Deployment:
 
 ```bash
-oc apply -f deployment.yaml
+kubectl apply -f deployment.yaml
+```
+Output:-
+```
+deployment.apps/nginx-app created
 ```
 
 
@@ -191,17 +203,38 @@ oc apply -f deployment.yaml
 Expose the NGINX service to the network to make it accessible externally.
 
 ```bash
-oc expose deployment nginx-app --port=80 --type=LoadBalancer --name=nginx-service
+kubectl expose deployment nginx-app --port=80 --target-port=80 --type=NodePort -n production
+```
+
+Output:-
+```
+service/nginx-app exposed
 ```
 
 ### 4.4 Step 4: Get the Service URL and Test
 Retrieve the external IP or URL assigned to the service and test it using cURL:
 
 ```bash
-oc get svc nginx-service
-curl http://192.168.1.100
+praveshkumar@fedora:~/newone$ kubectl get svc -n uat
+NAME        TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+nginx-app   NodePort   10.106.75.47   <none>        80:32142/TCP   11s
+```
+
+```bash
+praveshkumar@fedora:~/newone$ curl 192.168.39.169:32142
 ```
 Expected Output:
 
 <html><body><h1>Hello, OpenShift!</h1></body></html>
+
+```bash
+praveshkumar@fedora:~/newone$ minikube service nginx-app -n uat
+|-----------|-----------|-------------|-----------------------------|
+| NAMESPACE |   NAME    | TARGET PORT |             URL             |
+|-----------|-----------|-------------|-----------------------------|
+| uat       | nginx-app |          80 | http://192.168.39.169:32142 |
+|-----------|-----------|-------------|-----------------------------|
+🎉  Opening service uat/nginx-app in default browser...
+```
+
 
