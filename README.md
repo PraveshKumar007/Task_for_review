@@ -3,8 +3,8 @@
 ## Table of Contents
 1. [Introduction](#1-introduction)
 2. [Key Concepts](#2-key-concepts)
-   - [Microservices](#21-microservices)
-   - [User Acceptance Testing (UAT)](#22-user-acceptance-testing-uat)
+   - [What are Microservices](#21-What are Microservices?)
+   - [What is User Acceptance Testing (UAT)?](#22-What is User Acceptance Testing (UAT))
    - [Production Server](#23-production-server)
    - [OpenShift vs Kubernetes](#24-openshift-vs-kubernetes)
    - [Namespace](#25-namespace)
