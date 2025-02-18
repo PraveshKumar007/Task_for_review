@@ -12,7 +12,6 @@
    - [Deployment](#27-deployment)
    - [Service](#28-service)
    - [Istio](#29-istio)
-   - [CURL](#210-curl)
 3. [Migration Process: UAT to Production](#3-migration-process-uat-to-production)
    - [Step 1: Retrieve ConfigMap and Deployment from UAT](#31-step-1-retrieve-configmap-and-deployment-from-uat)
    - [Step 2: Modify Configurations for Production](#32-step-2-modify-configurations-for-production)
@@ -88,10 +87,7 @@ Understanding the core components involved in OpenShift deployment is crucial fo
 
 **Example:** Similar to a traffic control system that manages the movement of vehicles between different routes, Istio manages traffic between microservices.
 
-### 2.10 CURL
-**Definition:** CURL is a command-line tool used to make HTTP requests for interacting with services or testing endpoints.
 
-**Example:** Like calling a phone number to check if a service is available, you use cURL to check if your application is running by hitting an endpoint.
 
 ---
 
