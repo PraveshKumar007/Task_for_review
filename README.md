@@ -79,12 +79,19 @@ The **production server** is the **live environment** where real users access th
 
 ## **OpenShift vs Kubernetes – What’s the Difference?**
 
-| **Feature**         | **Kubernetes**                          | **OpenShift**                               |
-|---------------------|--------------------------------|----------------------------------|
-| **What is it?**     | Open-source container orchestration | Enterprise Kubernetes by Red Hat |
-| **Security**        | Requires manual setup           | Built-in security features      |
-| **User Interface**  | Basic Dashboard                | Advanced, user-friendly console |
-| **Installation**    | More complex setup             | Easier with automation tools    |
+| Feature  | **OpenShift** | **Kubernetes** |
+|------------|--------------|---------------|
+| **Ownership & Support** | Red Hat maintains it with enterprise-level support | CNCF (Cloud Native Computing Foundation), community-driven |
+| **Installation & Setup** | Simple but requires Red Hat ecosystem (RHEL, RHCOS) | Manual setup, flexible but complex |
+| **Web UI (Console)** | Advanced built-in UI (Developer & Admin views) | Basic Dashboard, needs extra configuration |
+| **Security** | **More secure** (strict security policies, built-in RBAC) | Secure but requires manual security hardening |
+| **CI/CD Integration** | Built-in **OpenShift Pipelines (Tekton)** & **ArgoCD** | Separate tools required (Jenkins, ArgoCD, Tekton) |
+| **Networking** | **OpenShift SDN** + Built-in **Istio Service Mesh** | Flannel, Calico, Cilium (Networking plugin required) |
+| **Registry (Image Management)** | Built-in **Red Hat OpenShift Container Registry (OCR)** | Requires setting up a registry (Harbor, Docker Hub, etc.) |
+| **RBAC & Authentication** | Built-in **OAuth, LDAP, Kerberos, SSO support** | Manual RBAC setup, external tools required |
+| **Operator Support** | **OpenShift OperatorHub** (Easy Installation) | Operators available but require manual setup |
+| **Pricing** | Paid (Red Hat Subscription) | Free & Open-Source |
+
 
 ### **Simple Explanation**
 1. **Kubernetes is like an Android phone** – basic but powerful.
