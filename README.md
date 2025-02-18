@@ -40,7 +40,7 @@ The sections include:
 ## 2. Key Concepts
 Understanding the core components involved in OpenShift deployment is crucial for managing the migration process effectively. Below are key concepts and terms used in OpenShift and Kubernetes environments.
 
-## **2.1. What are Microservices?**
+## **What are Microservices?**
 ### **Definition**
 Microservices is a way of designing an application by breaking it into **small, independent services**. Each service runs separately and communicates with others through APIs (Application Programming Interfaces).
 
@@ -55,7 +55,7 @@ Each service works independently, meaning if there is a problem with the **payme
 
 ---
 
-## **2.2. What is User Acceptance Testing (UAT)?**
+## **What is User Acceptance Testing (UAT)?**
 ### **Definition**
 UAT is a **testing phase** where real users check if the application works correctly **before** it is made available to the public.
 
@@ -67,7 +67,7 @@ UAT is a **testing phase** where real users check if the application works corre
 
 ---
 
-## **2.3. What is a Production Server?**
+## **What is a Production Server?**
 ### **Definition**
 The **production server** is the **live environment** where real users access the application.
 
@@ -77,7 +77,7 @@ The **production server** is the **live environment** where real users access th
 
 ---
 
-## **2.4. OpenShift vs Kubernetes – What’s the Difference?**
+## **OpenShift vs Kubernetes – What’s the Difference?**
 
 | **Feature**         | **Kubernetes**                          | **OpenShift**                               |
 |---------------------|--------------------------------|----------------------------------|
@@ -92,7 +92,7 @@ The **production server** is the **live environment** where real users access th
 
 ---
 
-## **2.5. What is a Namespace?**
+## **What is a Namespace?**
 ### **Definition**
 A **namespace** in OpenShift helps organize and separate different projects, teams, or environments inside a Kubernetes cluster.
 
@@ -104,7 +104,7 @@ Imagine a **university**:
 
 ---
 
-## **2.6. What is a ConfigMap?**
+## **What is a ConfigMap?**
 ### **Definition**
 A **ConfigMap** stores configuration settings for an application so that developers **don’t have to change the application code** whenever settings are updated.
 
@@ -115,7 +115,7 @@ A **ConfigMap** stores configuration settings for an application so that develop
 
 ---
 
-## **2.7. What is a Deployment?**
+## **What is a Deployment?**
 ### **Definition**
 A **Deployment** ensures that the correct number of application instances (**pods**) are running. If a pod crashes, OpenShift will **automatically start a new one**.
 
@@ -126,7 +126,7 @@ A **Deployment** ensures that the correct number of application instances (**pod
 
 ---
 
-## **2.8. What is a Service?**
+## **What is a Service?**
 ### **Definition**
 A **Service** in OpenShift allows applications inside the cluster to **communicate with each other** and lets users access them from outside.
 
@@ -138,7 +138,7 @@ A **Service** in OpenShift allows applications inside the cluster to **communica
 
 ---
 
-## **2.9. What is Istio?**
+## **What is Istio?**
 ### **Definition**
 **Istio is a service mesh** – a technology that manages how different microservices talk to each other in OpenShift. It adds **security, monitoring, and traffic management** between services.
 
