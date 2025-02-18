@@ -163,7 +163,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-app
-  namespace: uat
+  namespace: production
 spec:
   replicas: 1
   selector:
@@ -215,7 +215,7 @@ service/nginx-app exposed
 Retrieve the external IP or URL assigned to the service and test it using cURL:
 
 ```bash
-praveshkumar@fedora:~/newone$ kubectl get svc -n uat
+praveshkumar@fedora:~/newone$ kubectl get svc -n production
 NAME        TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
 nginx-app   NodePort   10.106.75.47   <none>        80:32142/TCP   11s
 ```
@@ -224,15 +224,17 @@ nginx-app   NodePort   10.106.75.47   <none>        80:32142/TCP   11s
 praveshkumar@fedora:~/newone$ curl 192.168.39.169:32142
 ```
 Expected Output:
-
+```bash
 <html><body><h1>Hello, OpenShift!</h1></body></html>
+```
+#### Now Open the nginx-app service in default browser:-
 
 ```bash
-praveshkumar@fedora:~/newone$ minikube service nginx-app -n uat
+praveshkumar@fedora:~/newone$ minikube service nginx-app -n production
 |-----------|-----------|-------------|-----------------------------|
 | NAMESPACE |   NAME    | TARGET PORT |             URL             |
 |-----------|-----------|-------------|-----------------------------|
-| uat       | nginx-app |          80 | http://192.168.39.169:32142 |
+| production| nginx-app |          80 | http://192.168.39.169:32142 |
 |-----------|-----------|-------------|-----------------------------|
 🎉  Opening service uat/nginx-app in default browser...
 ```
