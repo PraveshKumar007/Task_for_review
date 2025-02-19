@@ -88,8 +88,6 @@ The **production server** is the **live environment** where real users access th
 | **CI/CD Integration** | Built-in **OpenShift Pipelines (Tekton)** & **ArgoCD** | Separate tools required (Jenkins, ArgoCD, Tekton) |
 | **Networking** | **OpenShift SDN** + Built-in **Istio Service Mesh** | Flannel, Calico, Cilium (Networking plugin required) |
 | **Registry (Image Management)** | Built-in **Red Hat OpenShift Container Registry (OCR)** | Requires setting up a registry (Harbor, Docker Hub, etc.) |
-| **RBAC & Authentication** | Built-in **OAuth, LDAP, Kerberos, SSO support** | Manual RBAC setup, external tools required |
-| **Operator Support** | **OpenShift OperatorHub** (Easy Installation) | Operators available but require manual setup |
 | **Pricing** | Paid (Red Hat Subscription) | Free & Open-Source |
 
 
