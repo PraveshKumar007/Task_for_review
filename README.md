@@ -6,7 +6,7 @@
    - [What are Microservices?](#what-are-microservices)
    - [What is User Acceptance Testing (UAT)?](#what-is-user-acceptance-testing-uat)
    - [What is a Production Server?](#what-is-a-production-server)
-   - [OpenShift vs Kubernetes – What’s the Difference?](#openshift-vs-kubernetes-whats-the-difference)
+   - [OpenShift vs Kubernetes–Whats the Difference?](#openshift-vs-kubernetes--whats-the-difference)
    - [What is a Namespace?](#what-is-a-namespace)
    - [What is a ConfigMap?](#what-is-a-configmap)
    - [What is a Deployment?](#what-is-a-deployment)
