@@ -286,16 +286,5 @@ Expected Output:
 ```bash
 <html><body><h1>Hello, OpenShift!</h1></body></html>
 ```
-#### Now Open the nginx-app service in default browser:-
-
-```bash
-praveshkumar@fedora:~/newone$ minikube service nginx-app -n production
-|-----------|-----------|-------------|-----------------------------|
-| NAMESPACE |   NAME    | TARGET PORT |             URL             |
-|-----------|-----------|-------------|-----------------------------|
-| production| nginx-app |          80 | http://192.168.39.169:32142 |
-|-----------|-----------|-------------|-----------------------------|
-🎉  Opening service uat/nginx-app in default browser...
-```
 
 
