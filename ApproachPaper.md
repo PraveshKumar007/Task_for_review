@@ -53,7 +53,8 @@ Additionally, this document provides a practical example of deploying an NGINX-b
 
 ### 3.1 Architecture Diagram
 
-*(Diagram to be included showing the UAT and Production environments, along with Istio integration.)*
+
+<img src="the-seo-guide-to-angular.png" alt="" style="width:100%;"/>
 
 
 
