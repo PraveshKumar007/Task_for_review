@@ -55,6 +55,8 @@ Additionally, this document provides a practical example of deploying an NGINX-b
 
 *(Diagram to be included showing the UAT and Production environments, along with Istio integration.)*
 
+
+
 ### 3.2 Description
 
 This approach follows a controlled migration of microservices from UAT to Production, ensuring all configurations, deployments, and services are properly applied and validated before making them available to users.
