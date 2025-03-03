@@ -54,7 +54,7 @@ Additionally, this document provides a practical example of deploying an NGINX-b
 ### 3.1 Architecture Diagram
 
 
-<img src="the-seo-guide-to-angular.png" alt="" style="width:100%;"/>
+<img src="Untitled-2025-03-04-0021.excalidraw.png" alt="" style="width:100%;"/>
 
 
 
@@ -94,7 +94,7 @@ This approach follows a controlled migration of microservices from UAT to Produc
 
 ### 4.1 Architecture Diagram
 
-*(Diagram to be included showing CI/CD integration for automated deployments.)*
+<img src="Untitled-2025-03-04-0021.excalidraw.png" alt="" style="width:100%;"/>
 
 ### 4.2 Description
 
