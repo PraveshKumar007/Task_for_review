@@ -183,8 +183,11 @@ oc apply -f deployment.yaml -n production
 Expose the service to make it accessible externally and verify its functionality using cURL.
 
 ```bash
-oc expose deployment my-service --type=LoadBalancer --name=my-service-lb -n production
-curl http://my-service-lb.production.example.com
+oc expose deployment my-service -n production
+```
+After this configure this service on istio and hit the service using curl.
+```
+curl -v istio.in/endpoint -X POST
 ```
 
 ## 4. Practical Example: Deploying NGINX-based Microservice
