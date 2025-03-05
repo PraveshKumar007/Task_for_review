@@ -92,7 +92,7 @@ This approach follows a controlled migration of microservices from UAT to Produc
 
 ### 4.1 Architecture Diagram
 
-<img src="https://github.com/PraveshKumar007/Task_for_review/blob/main/Untitled-2025-03-04-0021.excasalidraw.png" alt="" style="width:100%;"/>
+<img src="https://github.com/PraveshKumar007/Task_for_review/blob/main/xsaa.png" alt="" style="width:100%;"/>
 
 ### 4.2 Description
 
