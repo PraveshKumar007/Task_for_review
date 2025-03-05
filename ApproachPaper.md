@@ -111,7 +111,7 @@ This approach automates microservice migration through a CI/CD pipeline, reducin
 #### 4.3.1 Hardware Requirements
 
 - OpenShift cluster with UAT and Production environments.
-- CI/CD infrastructure with at least **8 CPU cores** and **32GB RAM**.
+- CI/CD infrastructure with at least **4 CPU cores** and **16GB RAM**.
 
 #### 4.3.2 Software Requirements
 
