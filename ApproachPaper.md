@@ -76,14 +76,12 @@ This approach follows a controlled migration of microservices from UAT to Produc
 #### 3.3.1 Hardware Requirements
 
 - OpenShift cluster with UAT and Production environments.
-- Minimum **4 CPU cores** and **16GB RAM** per environment.
+- Minimum **2 CPU cores** and **8GB RAM** per environment.
 
 #### 3.3.2 Software Requirements
 
-- OpenShift 4.x
-- Kubernetes CLI (`kubectl` / `oc`)
+- OpenShift 
 - Istio Service Mesh
-- Git for configuration management
 
 #### 3.3.3 Networking Requirements
 
@@ -117,7 +115,7 @@ This approach automates microservice migration through a CI/CD pipeline, reducin
 
 #### 4.3.2 Software Requirements
 
-- OpenShift 4.x
+- OpenShift
 - ArgoCD / OpenShift Pipelines (Tekton)
 - Git and GitOps workflow
 - Istio Service Mesh
