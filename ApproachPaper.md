@@ -27,7 +27,7 @@
 
 The objective of this approach paper is to outline the steps for migrating microservices from the User Acceptance Testing (UAT) environment to the Production environment in OpenShift. This process ensures a smooth transition while maintaining service integrity, security, and efficiency.
 
-Additionally, this document provides a practical example of deploying an NGINX-based microservice, including key aspects such as configuration management, deployment, and service exposure through Istio.
+
 
 ## 2. Proposed Solutions
 
