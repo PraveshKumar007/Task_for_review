@@ -41,8 +41,8 @@ This document provides a step-by-step implementation guide for migrating microse
 ## Pre-requisites
 
 ### Hardware Requirements
-- 2 CPUs  
-- 8 GB RAM  
+- 4 CPUs  
+- 16 GB RAM  
 - 200 GB disk space  
 
 ### Software Requirements
