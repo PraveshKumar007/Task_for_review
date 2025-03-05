@@ -54,7 +54,7 @@ The objective of this approach paper is to outline the steps for migrating micro
 ### 3.1 Architecture Diagram
 
 
-<img src="Untitled-2025-03-04-0021.excalidraw.png" alt="" style="width:100%;"/>
+<img src="https://github.com/PraveshKumar007/Task_for_review/blob/main/Untitled-2025-03-xsa04-0021.excalidraw.png" alt="" style="width:100%;"/>
 
 
 
