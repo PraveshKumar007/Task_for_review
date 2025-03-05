@@ -76,7 +76,7 @@ This approach follows a controlled migration of microservices from UAT to Produc
 #### 3.3.1 Hardware Requirements
 
 - OpenShift cluster with UAT and Production environments.
-- Minimum **2 CPU cores** and **8GB RAM** per environment.
+- Minimum **4 CPU cores** and **8 GB RAM** per environment.
 
 #### 3.3.2 Software Requirements
 
