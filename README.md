@@ -85,7 +85,7 @@ The **production server** is the **live environment** where real users access th
 | **Installation & Setup** | Simple but requires Red Hat ecosystem (RHEL, RHCOS) | Manual setup, flexible but complex |
 | **Web UI (Console)** | Advanced built-in UI (Developer & Admin views) | Basic Dashboard, needs extra configuration |
 | **Security** | **More secure** (strict security policies, built-in RBAC) | Secure but requires manual security hardening |
-| **CI/CD Integration** | Built-in **OpenShift Pipelines (Tekton)** & **ArgoCD** | Separate tools required (Jenkins, ArgoCD, Tekton) |
+| **CI/CD Integration** | Built-in **OpenShift Pipelines (Tekton)** | Separate tools required (Jenkins, Tekton) |
 | **Networking** | **OpenShift SDN** + Built-in **Istio Service Mesh** | Flannel, Calico, Cilium (Networking plugin required) |
 | **Registry (Image Management)** | Built-in **Red Hat OpenShift Container Registry (OCR)** | Requires setting up a registry (Harbor, Docker Hub, etc.) |
 | **Pricing** | Paid (Red Hat Subscription) | Free & Open-Source |
