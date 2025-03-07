@@ -1,16 +1,12 @@
 # IMPLEMENTATION JOURNAL - ESB-OCP
 
-## Submitted By
-**Pravesh Kumar**
 
-## Submitted To
-**Pawan, Pankaj sir**
-
-## Version
-**1.0**
-
-## Reviewer Name
-**Pawan, Pankaj sir**
+|                       |            |
+|--------------------------------|-------------------------|
+| **Submitted By**               | Pravesh Kumar           |
+| **Submitted To**               | Pawan, Pankaj Sir       |
+| **Test Case Version**          | 1.0                  |
+| **Reviewer Name**              | Pawan, Pankaj Sir       |
 
 ---
 
