@@ -10,7 +10,6 @@
    - [What is a Namespace?](#what-is-a-namespace)
    - [What is a ConfigMap?](#what-is-a-configmap)
    - [What is a Deployment?](#what-is-a-deployment)
-   - [What is a Service?](#what-is-a-service)
    - [What is Istio?](#what-is-istio)
 3. [Migration Process: UAT to Production](#3-migration-process-uat-to-production)
    - [Step 1: Retrieve ConfigMap and Deployment from UAT](#31-step-1-retrieve-configmap-and-deployment-from-uat)
@@ -129,17 +128,6 @@ A **Deployment** ensures that the correct number of application instances (**pod
 - If one employee **leaves**, the company **hires a new one** to keep the total at **10**.
 - OpenShift does the same with applications – if a pod stops working, it replaces it with a new one.
 
----
-
-## **What is a Service?**
-### **Definition**
-A **Service** in OpenShift allows applications inside the cluster to **communicate with each other** and lets users access them from outside.
-
-### **Example**
-- Think of a **receptionist in an office**.
-- A visitor (request) arrives and asks for the **HR department (application pod)**.
-- The **receptionist (Service)** directs them to the correct office.
-- Similarly, a **Service in OpenShift** directs network traffic to the correct application pod.
 
 ---
 
